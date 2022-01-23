@@ -1,9 +1,12 @@
 
 let kata1 = "Hiras"
-let kata2 = "Hiras Sarih"
+let kata2 = 123
 let kata3 = "Sop Pos"
 
 function checkPalindrome(inputString) {
+    if (typeof inputString != "string"){
+        return "Harus String"
+    }
     let strArray = inputString.toLowerCase().split(''); // merubah kata menjadi lower case dan split per huruf
     // console.log(strArray)
     let newArr = strArray.join(''); //menggabungkan kata
